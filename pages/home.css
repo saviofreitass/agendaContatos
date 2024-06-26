@@ -4,8 +4,8 @@
 }
 
 body{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 header{
@@ -38,7 +38,7 @@ main{
      "telefone telefone" ;
     background-color: gray;
     height: 250px;
-    width: 500px;
+    width: 50vw;
     padding: 10px;
     margin: 20px 10px;
 }
@@ -141,5 +141,37 @@ input{
 .options button:disabled {
     background-color: gray;
     color: #fff;
+}
+
+@media screen and (max-width: 803px) {
+    .container{
+        width: 70vw;
+        margin: 20px 1vw;
+    }
+
+    .nome{
+        width: 34vw;
+    }
+
+    .sobre{
+        width: 34vw;
+    }
+
+    .endereco{
+        width: 70vw;
+    }
+
+    .fone{
+        width: 50vw;
+    }
+
+    .options button{
+        width: 20vw;
+        font-size: 3vw;
+    }
+
+    .roll{
+        width: 90vw;
+    }
 }
 
