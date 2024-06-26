@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <p>Cadastro de Contato</p>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="nome">
+                <label for="name">Nome</label>
+                <input type="text" class="name" name="name" disabled="true">
+            </div>
+            <div class="sobre">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" class="sobrenome" name="sobrenome" disabled="true">
+            </div>
+            <div class="endereco">
+                <label for="adress">Endereço</label>
+                <input type="text" class="adress" name="adress" disabled="true">
+            </div>
+            <div class="fone">
+                <label for="phone">Telefone</label>
+                <input type="number" class="phone" name="phone" disabled="true">
+            </div>
+        </section>
+        <section class="options">
+            <button class="include">INCLUIR</button>
+            <button class="edit" disabled="true">EDITAR</button>
+            <button class="save" disabled="true">SALVAR</button>
+            <button class="cancel" disabled="true">CANCELAR</button>
+            <button class="delete" disabled="true">EXCLUIR</button>
+        </section>
+        <section class="roll">
+            <button class="inicio">|<</button>
+            <button class="anterior"><</button>
+            <button class="proximo">></button>
+            <button class="final">>|</button>
+        </section>
+    </main>
+
+<script src="home.js"></script>
+</body>
+</html>

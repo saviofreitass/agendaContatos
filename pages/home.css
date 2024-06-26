@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #04C9F4;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header p{
+    margin-left: 30px;
+}
+
+main{
+    display: inline-grid;
+    grid-template-areas: 
+    "form botoes"
+    "avanca avanca";
+}
+
+.container{
+    grid-area: form;
+    display: grid;
+    grid-template-areas:
+     "nome sobrenome"
+     "endereco endereco"
+     "telefone telefone" ;
+    background-color: gray;
+    height: 250px;
+    width: 500px;
+    padding: 10px;
+    margin: 20px 10px;
+}
+
+.nome{
+    grid-area: nome;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 5px;
+}
+
+.sobre{
+    grid-area: sobrenome;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 5px;
+}
+
+.endereco{
+    grid-area: endereco;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 5px;
+}
+
+.fone{
+    grid-area: telefone;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 5px;
+    width: 240px;
+}
+
+input{
+    height: 40px;
+}
+
+.options{
+    grid-area: botoes;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 270px;
+}
+
+.options button{
+    width: 120px;
+    height: 40px;
+    border: none;
+}
+
+.include{
+    background-color: green;
+    color: #fff;
+}
+
+
+.edit{
+    background-color: rgb(145, 145, 35);
+    color: #fff;
+}
+
+.save{
+    background-color: #04C9F4;
+    color: #fff;
+}
+
+.cancel{
+    color: #04C9F4;
+}
+
+.delete{
+    background-color: red;
+    color: #fff;
+}
+
+.roll{
+    grid-area: avanca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 520px;
+    margin: 10px;
+}
+
+.roll button{
+    width: 80px;
+    height: 50px;
+    margin: 0 20px;
+    background-color: #000;
+    color: #fff;
+    border:none;
+}
+
+.options button:disabled {
+    background-color: gray;
+    color: #fff;
+}
+
