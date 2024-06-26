@@ -143,7 +143,7 @@ input{
     color: #fff;
 }
 
-.textFooter{
+.footer{
     display: flex;
     justify-content: center;
     align-items: center;
